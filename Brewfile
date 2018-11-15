@@ -3,6 +3,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 
 brew "antibody"
+brew "bat"
 brew "composer"
 brew "fd"
 brew "fzf"
