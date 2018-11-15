@@ -11,8 +11,6 @@ let g:ackprg = "rg --vimgrep --no-heading"
 
 let g:dracula_colorterm = 0
 
-let g:ranger_replace_netrw = 1
-
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -35,7 +33,6 @@ Plug 'editorconfig/editorconfig-vim'
 
 Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
-Plug 'francoiscabrol/ranger.vim'
 
 Plug 'w0rp/ale'
 
@@ -77,6 +74,10 @@ set list
 set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¬,precedes:«,extends:»
 
 set colorcolumn=80,120
+set cursorline
+
+set noruler
+set laststatus=0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Editing settings
@@ -91,6 +92,35 @@ set linebreak                     " Wrap lines at word boundaries
 set hidden                        " Enable hidden buffers
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Functions
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+function! LF(path)
+  let tempPath = tempname()
+  let currentPath = expand(a:path)
+
+  if isdirectory(currentPath)
+    silent exec '!lf -selection-path=' . shellescape(tempPath) . ' "' . currentPath . '"'
+  else
+    silent exec '!lf -selection-path=' . shellescape(tempPath)
+  endif
+
+  if filereadable(tempPath)
+    for file in readfile(tempPath)
+      exec 'edit ' . file
+    endfor
+
+    call delete(tempPath)
+  endif
+
+  redraw!
+
+  filetype detect
+endfun
+
+command! LF call LF("%:p:h")
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keybindings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -103,6 +133,9 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+" Common commands
+nmap <Leader>w :w<CR>
+
 " Show the list of open buffers
 nmap ; :Buffers<CR>
 
@@ -111,6 +144,9 @@ nmap <Leader>t :Files<CR>
 
 " Search through files
 nmap <Leader>a :Ack!<Space>
+
+" Browse files
+nmap <Leader>f :LF<CR>
 
 " Unload currently open buffer
 nmap <Leader>d :bd<CR>
