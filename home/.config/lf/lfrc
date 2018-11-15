@@ -5,7 +5,7 @@ set promptfmt "\033[34;1m%w/\033[0m\033[1m%f\033[0m"
 
 cmd mkdir %mkdir $1
 cmd touch %touch $1
-cmd trash %trash $f
+cmd trash %trash $fx
 
 map C push :touch<space>
 map M push :mkdir<space>
