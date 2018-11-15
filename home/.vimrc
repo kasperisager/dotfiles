@@ -9,7 +9,7 @@ set rtp+=/usr/local/opt/fzf
 
 let g:ackprg = "rg --vimgrep --no-heading"
 
-let g:dracula_colorterm = 0
+let g:dracula_italic = 0
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -66,7 +66,7 @@ set undodir=~/.vim/undo
 " Color and font settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set termguicolors                 " Enable GUI color support
+set termguicolors
 
 colorscheme dracula
 
