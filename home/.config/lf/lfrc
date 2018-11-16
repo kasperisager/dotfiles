@@ -7,6 +7,12 @@ cmd mkdir %mkdir $1
 cmd touch %touch $1
 cmd trash %trash $fx
 
+cmd stage %git add $fx
+cmd unstage %git reset $fx
+
 map C push :touch<space>
 map M push :mkdir<space>
 map D trash
+
+map S stage
+map R unstage
