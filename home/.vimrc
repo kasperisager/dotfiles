@@ -7,6 +7,8 @@ let g:ale_sign_column_always = 1
 
 set rtp+=/usr/local/opt/fzf
 
+set completeopt=menu,menuone,preview,noselect,noinsert
+
 let g:ackprg = "rg --vimgrep --no-heading"
 
 let g:dracula_italic = 0

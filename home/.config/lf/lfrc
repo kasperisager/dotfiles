@@ -6,6 +6,7 @@ set promptfmt "\033[34;1m%w/\033[0m\033[1m%f\033[0m"
 cmd mkdir %mkdir $1
 cmd touch %touch $1
 cmd trash %trash $fx
+cmd rename %mv -i $f $1
 
 cmd stage %git add $fx
 cmd unstage %git reset $fx
