@@ -92,6 +92,7 @@ set shortmess=atI                 " Don't show the intro message when starting V
 set title                         " Show the filename in the window titlebar
 set linebreak                     " Wrap lines at word boundaries
 set hidden                        " Enable hidden buffers
+set number relativenumber
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Functions
@@ -121,6 +122,16 @@ function! LF(path)
 endfun
 
 command! LF call LF("%:p:h")
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Autogroups
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keybindings
