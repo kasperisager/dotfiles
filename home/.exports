@@ -1,14 +1,8 @@
 export EDITOR="vim"
 
-# Composer (https://github.com/composer/composer)
-export PATH="$PATH:$HOME/.composer/vendor/bin"
-
 # Go (https://golang.org/)
 export GOPATH="$HOME/Development/go"
 export PATH="$PATH:$GOPATH/bin"
-
-# Yarn (https://yarnpkg.com/)
-export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
 
 # FZF (https://github.com/junegunn/fzf)
 export FZF_DEFAULT_COMMAND="fd --type f --hidden"

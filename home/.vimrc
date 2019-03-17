@@ -39,6 +39,7 @@ Plug 'mileszs/ack.vim'
 Plug 'w0rp/ale'
 
 Plug 'leafgarland/typescript-vim'
+Plug 'cespare/vim-toml'
 
 call plug#end()
 
@@ -73,7 +74,6 @@ set termguicolors
 colorscheme dracula
 
 set list
-set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¬,precedes:«,extends:»
 
 set colorcolumn=80,120
 set cursorline
