@@ -49,6 +49,3 @@
 [mergetool]
   prompt = false
   keepBackup = false
-
-[apply]
-  whitespace = warn
