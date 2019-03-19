@@ -25,6 +25,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sensible'
 
 Plug 'dracula/vim'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
@@ -65,9 +66,15 @@ set undodir=~/.vim/undo
 " Color and font settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set termguicolors
+set t_Co=256
 
-colorscheme dracula
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
+colorscheme onehalfdark
 
 set list
 
