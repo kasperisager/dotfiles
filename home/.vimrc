@@ -16,6 +16,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'myusuf3/numbers.vim'
 Plug 'w0rp/ale'
@@ -120,6 +121,9 @@ nmap <Leader>t :Files<CR>
 
 " Browse files
 nmap <Leader>f :ListFiles<CR>
+
+" Search files
+nmap <Leader>s :Rg<CR>
 
 " Go to definition
 nmap <Leader>gd :ALEGoToDefinition<CR>
