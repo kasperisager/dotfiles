@@ -19,6 +19,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'myusuf3/numbers.vim'
+Plug 'jeetsukumaran/vim-filebeagle'
 Plug 'w0rp/ale'
 
 call plug#end()
@@ -67,35 +68,6 @@ set linebreak                     " Wrap lines at word boundaries
 set hidden                        " Enable hidden buffers
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Functions
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-function! ListFiles(path)
-  let tempPath = tempname()
-  let currentPath = expand(a:path)
-
-  if isdirectory(currentPath)
-    silent exec '!lf -selection-path=' . shellescape(tempPath) . ' "' . currentPath . '"'
-  else
-    silent exec '!lf -selection-path=' . shellescape(tempPath)
-  endif
-
-  if filereadable(tempPath)
-    for file in readfile(tempPath)
-      exec 'edit ' . file
-    endfor
-
-    call delete(tempPath)
-  endif
-
-  redraw!
-
-  filetype detect
-endfun
-
-command! ListFiles call ListFiles("%:p:h")
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keybindings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -118,9 +90,6 @@ nmap ; :Buffers<CR>
 
 " Open a file
 nmap <Leader>t :Files<CR>
-
-" Browse files
-nmap <Leader>f :ListFiles<CR>
 
 " Search files
 nmap <Leader>s :Rg<CR>
