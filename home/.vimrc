@@ -2,24 +2,24 @@
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Options
 let g:ale_completion_enabled = 1
-let g:ale_sign_column_always = 1
+
+let g:filebeagle_check_gitignore = 1
+let g:filebeagle_show_hidden = 1
 
 call plug#begin()
 
 Plug '/usr/local/opt/fzf'
-
 Plug 'cespare/vim-toml'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'jeetsukumaran/vim-filebeagle'
 Plug 'junegunn/fzf.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'morhetz/gruvbox'
+Plug 'myusuf3/numbers.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
-Plug 'myusuf3/numbers.vim'
-Plug 'jeetsukumaran/vim-filebeagle'
 Plug 'w0rp/ale'
 
 call plug#end()
@@ -47,13 +47,13 @@ set undodir=~/.vim/undo
 set termguicolors
 set list
 set colorcolumn=80,120
-set cursorline
 set noruler
 set laststatus=0
 
 colorscheme gruvbox
 
-hi clear SignColumn
+hi CursorLineNr guibg=NONE ctermbg=NONE
+hi SignColumn guibg=NONE ctermbg=NONE
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Editing settings
