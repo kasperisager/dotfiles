@@ -30,11 +30,12 @@ call plug#end()
 
 runtime plugin/sensible.vim       " Load sensible defaults
 
+set encoding=utf-8
 set showcmd                       " Show commands as they're entered
 set ignorecase                    " Ignore case when searching
 set smartcase                     " When searching try to be smart about cases
 set gdefault                      " Add the g flag to search/replace by default
-set clipboard=unnamed,unnamedplus " Use the OS clipboard by default (on versions compiled with `+clipboard`)
+set clipboard=unnamed,unnamedplus " Use the OS clipboard by default
 
 set backupdir=~/.vim/backups      " Centralize backups, swapfiles and undo history
 set directory=~/.vim/swaps
@@ -51,9 +52,6 @@ set noruler
 set laststatus=0
 
 colorscheme gruvbox
-
-hi CursorLineNr guibg=NONE ctermbg=NONE
-hi SignColumn guibg=NONE ctermbg=NONE
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Editing settings
