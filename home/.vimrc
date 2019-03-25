@@ -4,19 +4,16 @@
 
 let g:ale_completion_enabled = 1
 
-let g:filebeagle_check_gitignore = 1
-let g:filebeagle_show_hidden = 1
-
 call plug#begin()
 
 Plug '/usr/local/opt/fzf'
 Plug 'cespare/vim-toml'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'jeetsukumaran/vim-filebeagle'
 Plug 'junegunn/fzf.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'morhetz/gruvbox'
 Plug 'myusuf3/numbers.vim'
+Plug 'ptzz/lf.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
