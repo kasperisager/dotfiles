@@ -22,3 +22,6 @@ for file in ~/.{aliases,functions,exports}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
+# Lower key timeout to avoid Vi mode lag
+KEYTIMEOUT=1
