@@ -1,3 +1,6 @@
+export PURE_PROMPT_SYMBOL="$"
+export PURE_PROMPT_VICMD_SYMBOL=">"
+
 # Antibody (https://github.com/caarlos0/antibody)
 source <(antibody init)
 

@@ -13,7 +13,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'morhetz/gruvbox'
 Plug 'myusuf3/numbers.vim'
-Plug 'ptzz/lf.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
@@ -33,6 +32,8 @@ set ignorecase                    " Ignore case when searching
 set smartcase                     " When searching try to be smart about cases
 set gdefault                      " Add the g flag to search/replace by default
 set clipboard=unnamed,unnamedplus " Use the OS clipboard by default
+set mouse=a                       " Enable mouse support
+set undofile                      " Enable persistent undo
 
 set backupdir=~/.vim/backups      " Centralize backups, swapfiles and undo history
 set directory=~/.vim/swaps
@@ -63,6 +64,35 @@ set linebreak                     " Wrap lines at word boundaries
 set hidden                        " Enable hidden buffers
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Functions
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+function! ListFiles(path)
+  let selectionPath = tempname()
+  let currentPath = expand(a:path)
+
+  silent exec '!lf -selection-path=' . shellescape(selectionPath) . ' ' . shellescape(currentPath)
+
+  if filereadable(selectionPath)
+    for file in readfile(selectionPath)
+      exec 'edit ' . file
+    endfor
+
+    call delete(selectionPath)
+  endif
+
+  redraw!
+
+  filetype detect
+endfun
+
+command! ListFiles call ListFiles("%:p")
+
+augroup ReplaceNetrw
+  autocmd VimEnter * silent! autocmd! FileExplorer
+augroup END
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keybindings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -85,6 +115,9 @@ nmap ; :Buffers<CR>
 
 " Open a file
 nmap <Leader>t :Files<CR>
+
+" Browse files
+nmap <Leader>f :ListFiles<CR>
 
 " Search files
 nmap <Leader>s :Rg<CR>

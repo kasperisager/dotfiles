@@ -1,7 +1,6 @@
 set hidden on
-#set previewer ~/.config/lf/preview.sh
-
-set promptfmt "\033[34;1m%w/\033[0m\033[1m%f\033[0m"
+set incsearch on
+set color256 on
 
 cmd mkdir %mkdir $1
 cmd touch %touch $1
