@@ -38,6 +38,11 @@ alias d="docker"
 alias dc="docker-compose"
 alias dm="docker-machine"
 
+# Kubernetes aliases
+alias k="kubectl"
+alias kc="kubectl config"
+alias kd="kubectl describe"
+
 # IRSSI aliases
 alias irc="irssi"
 
