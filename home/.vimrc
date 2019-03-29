@@ -35,9 +35,9 @@ set clipboard=unnamed,unnamedplus " Use the OS clipboard by default
 set mouse=a                       " Enable mouse support
 set undofile                      " Enable persistent undo
 
-set backupdir=~/.vim/backups      " Centralize backups, swapfiles and undo history
-set directory=~/.vim/swaps
-set undodir=~/.vim/undo
+set backupdir=~/.vim/backups//    " Centralize backups, swapfiles and undo history
+set directory=~/.vim/swaps//
+set undodir=~/.vim/undo//
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color and font settings
