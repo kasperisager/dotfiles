@@ -17,6 +17,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'w0rp/ale'
+Plug 'zhimsel/vim-stay'
 
 call plug#end()
 
@@ -34,10 +35,12 @@ set gdefault                      " Add the g flag to search/replace by default
 set clipboard=unnamed,unnamedplus " Use the OS clipboard by default
 set mouse=a                       " Enable mouse support
 set undofile                      " Enable persistent undo
+set viewoptions=cursor,folds,slash,unix
 
-set backupdir=~/.vim/backups//    " Centralize backups, swapfiles and undo history
+set backupdir=~/.vim/backups//    " Centralize backups, swaps, views, and undo history
 set directory=~/.vim/swaps//
 set undodir=~/.vim/undo//
+set viewdir=~/.vim/views//
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color and font settings
