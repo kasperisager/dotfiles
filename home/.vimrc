@@ -63,6 +63,10 @@ set title                         " Show the filename in the window titlebar
 set linebreak                     " Wrap lines at word boundaries
 set hidden                        " Enable hidden buffers
 
+" Avoid premature completion bug in ALE:
+" https://github.com/w0rp/ale/blob/cfffdab856ebe569c514f4bdfca62683625dd4a0/doc/ale.txt#L350-L356
+set completeopt=menu,menuone,preview,noselect,noinsert
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Functions
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
