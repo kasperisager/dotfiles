@@ -35,12 +35,15 @@ set gdefault                      " Add the g flag to search/replace by default
 set clipboard=unnamed,unnamedplus " Use the OS clipboard by default
 set mouse=a                       " Enable mouse support
 set undofile                      " Enable persistent undo
-set viewoptions=cursor,folds,slash,unix
 
 set backupdir=~/.vim/backups//    " Centralize backups, swaps, views, and undo history
 set directory=~/.vim/swaps//
 set undodir=~/.vim/undo//
 set viewdir=~/.vim/views//
+
+" Make vim play along nicely with vim-stay:
+" https://github.com/zhimsel/vim-stay#usage
+set viewoptions=cursor,folds,slash,unix
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color and font settings
