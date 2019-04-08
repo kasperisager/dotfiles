@@ -43,9 +43,6 @@ alias k="kubectl"
 alias kc="kubectl config"
 alias kd="kubectl describe"
 
-# IRSSI aliases
-alias irc="irssi"
-
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
