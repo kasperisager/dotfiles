@@ -1,8 +1,11 @@
 export EDITOR="vim"
 
-# Go (https://golang.org/)
+# Locale
+export LC_ALL=en_US.UTF-8
+
+# Go
 export GOPATH="$HOME/Development/go"
 export PATH="$PATH:$GOPATH/bin"
 
-# FZF (https://github.com/junegunn/fzf)
+# FZF
 export FZF_DEFAULT_COMMAND="fd --type f --hidden"
