@@ -29,7 +29,6 @@ alias gs="git status -sb"
 alias gm="git merge"
 alias gr="git rebase"
 alias gri="git rebase -i"
-alias gpr="git pull-request"
 alias gst="git stash"
 
 # Docker aliases
