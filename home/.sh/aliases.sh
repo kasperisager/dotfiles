@@ -7,9 +7,10 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-# List aliases
-alias l="ls -l"
-alias la="ls -la"
+# Exa aliases
+alias l="exa --long"
+alias ls="exa"
+alias la="exa --long --all"
 
 # Vim aliases
 alias v="vim"
