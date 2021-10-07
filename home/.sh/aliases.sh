@@ -44,3 +44,6 @@ alias kd="kubectl describe"
 
 # Yonkers aliases
 alias yo="yonkers"
+
+# Reload the shell
+alias reload="exec ${SHELL} -l"
