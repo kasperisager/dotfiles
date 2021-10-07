@@ -41,3 +41,6 @@ alias dm="docker-machine"
 alias k="kubectl"
 alias kc="kubectl config"
 alias kd="kubectl describe"
+
+# Yonkers aliases
+alias yo="yonkers"
