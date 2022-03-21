@@ -1,7 +1,10 @@
 source "$HOME/.sh/aliases.sh"
+source "$HOME/.sh/android.sh"
 source "$HOME/.sh/functions.sh"
 source "$HOME/.sh/env.sh"
 source "$HOME/.sh/jump.sh"
+source "$HOME/.sh/make.sh"
+source "$HOME/.sh/go.sh"
 
 source "$HOME/.zsh/history.zsh"
 source "$HOME/.zsh/prompt.zsh"

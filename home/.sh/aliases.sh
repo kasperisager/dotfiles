@@ -15,6 +15,9 @@ alias la="exa --long --all"
 # Vim aliases
 alias v="vim"
 
+# Helix aliases
+alias h="hx"
+
 # Git aliases
 alias g="git"
 alias gl="git pull --prune"
@@ -37,6 +40,9 @@ alias gst="git stash"
 alias d="docker"
 alias dc="docker-compose"
 alias dm="docker-machine"
+
+# Podman aliases
+alias p="podman"
 
 # Kubernetes aliases
 alias k="kubectl"

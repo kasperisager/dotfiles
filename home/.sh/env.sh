@@ -1,1 +1,1 @@
-export EDITOR="vim"
+export EDITOR="hx"
