@@ -1,0 +1,7 @@
+theme = "solarized_dark"
+
+[editor]
+line-number = "relative"
+
+[editor.file-picker]
+hidden = false
