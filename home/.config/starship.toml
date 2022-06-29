@@ -1,3 +1,6 @@
+[c]
+disabled = true
+
 [character]
 success_symbol = "[\\$](green)"
 error_symbol = "[\\$](red)"
@@ -26,6 +29,7 @@ symbol = "conda "
 symbol = "cr "
 
 [cmake]
+disabled = true
 symbol = "cmake "
 
 [dart]

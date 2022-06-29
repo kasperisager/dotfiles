@@ -5,6 +5,7 @@ source "$HOME/.sh/env.sh"
 source "$HOME/.sh/jump.sh"
 source "$HOME/.sh/make.sh"
 source "$HOME/.sh/go.sh"
+source "$HOME/.sh/deno.sh"
 
 source "$HOME/.zsh/history.zsh"
 source "$HOME/.zsh/prompt.zsh"
