@@ -12,6 +12,9 @@
       },
       "helix-editor/helix": {
         "revision": "5d96bef0d64d21af9092a181a25c6cd5fe452e14"
+      },
+      "homebrew/cask-drivers": {
+        "revision": "72bfbb0c600f27f980902bb2a9b8fb2b1e3fc994"
       }
     },
     "brew": {
@@ -673,6 +676,12 @@
         "options": {
           "full_name": "visual-studio-code"
         }
+      },
+      "logitech-options": {
+        "version": "9.60.116",
+        "options": {
+          "full_name": "logitech-options"
+        }
       }
     }
   },
@@ -681,7 +690,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.5.3",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "729c5b4a1ac6f1d8e4145df5d0f7b392c33e243e",
+        "Homebrew/homebrew-core": "5e4f17748e10e9a907d0a0fa55b24199c3f50b8f",
         "CLT": "13.0.0.0.1.1627064638",
         "Xcode": "13.2.1",
         "macOS": "12.3"
