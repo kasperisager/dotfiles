@@ -2,13 +2,13 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "cae8b51751c7bcdffcf706f33de365a1dea31891"
+        "revision": "a0d0b7ddcde8c58df774ddaab2d290329829eef1"
       },
       "homebrew/cask-fonts": {
-        "revision": "029a863b9f83d6bf15e124b97627853866da6e25"
+        "revision": "40ac7a64450f9827e0d748a6d78760fb078cd0b2"
       },
       "homebrew/cask-versions": {
-        "revision": "b1f06869688681534dcc00f84c10a6dae0009266"
+        "revision": "f25928e863adff64edf4e3e3456ec09a2fb46e8b"
       },
       "helix-editor/helix": {
         "revision": "5d96bef0d64d21af9092a181a25c6cd5fe452e14"
@@ -654,7 +654,7 @@
         }
       },
       "raycast": {
-        "version": "1.36.1",
+        "version": "1.37.1",
         "options": {
           "full_name": "raycast"
         }
@@ -690,10 +690,10 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.5.3",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "5e4f17748e10e9a907d0a0fa55b24199c3f50b8f",
-        "CLT": "13.0.0.0.1.1627064638",
-        "Xcode": "13.2.1",
-        "macOS": "12.3"
+        "Homebrew/homebrew-core": "aa1bbde6150233e8cb5c7c632e0d4d283cf4e0b3",
+        "CLT": "13.4.0.0.1.1651278267",
+        "Xcode": "13.4.1",
+        "macOS": "12.4"
       }
     }
   }

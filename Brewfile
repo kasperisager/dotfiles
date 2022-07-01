@@ -1,7 +1,6 @@
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "homebrew/cask-drivers"
 
 tap "helix-editor/helix"
 
@@ -35,5 +34,3 @@ cask "raycast"
 cask "slack"
 cask "telegram"
 cask "visual-studio-code"
-
-cask "logitech-options"
