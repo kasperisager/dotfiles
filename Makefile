@@ -6,5 +6,5 @@ dotfiles = $(subst home/, ~/, $(shell git ls-files home))
 	@mkdir -p $(dir $@)
 	ln -sfn ${PWD}/$< $@
 
-/usr/local/bin/brew:
-	/bin/bash -c "$(curl -fsSL https://git.io/JIY6g)"
+/opt/homebrew/bin/brew:
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
