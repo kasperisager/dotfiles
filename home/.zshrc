@@ -12,3 +12,5 @@ source "$HOME/.zsh/history.zsh"
 source "$HOME/.zsh/prompt.zsh"
 source "$HOME/.zsh/completion.zsh"
 source "$HOME/.zsh/fzf.zsh"
+
+source "$HOME/.docker/init-zsh.sh"
