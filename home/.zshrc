@@ -7,10 +7,9 @@ source "$HOME/.sh/make.sh"
 source "$HOME/.sh/go.sh"
 source "$HOME/.sh/deno.sh"
 source "$HOME/.sh/android.sh"
+source "$HOME/.sh/docker.sh"
 
 source "$HOME/.zsh/history.zsh"
 source "$HOME/.zsh/prompt.zsh"
 source "$HOME/.zsh/completion.zsh"
 source "$HOME/.zsh/fzf.zsh"
-
-source "$HOME/.docker/init-zsh.sh"
