@@ -1,6 +1,6 @@
 dotfiles = $(subst home/, ~/, $(shell git ls-files home))
 
-~: /usr/local/bin/brew ${dotfiles}
+~: /opt/homebrew/bin/brew ${dotfiles}
 
 ~/.%: home/.%
 	@mkdir -p $(dir $@)
