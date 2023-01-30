@@ -9,6 +9,7 @@ source "$HOME/.sh/deno.sh"
 source "$HOME/.sh/android.sh"
 source "$HOME/.sh/docker.sh"
 source "$HOME/.sh/bun.sh"
+source "$HOME/.sh/pear.sh"
 
 source "$HOME/.zsh/history.zsh"
 source "$HOME/.zsh/prompt.zsh"
