@@ -1,0 +1,14 @@
+[[language]]
+name = "javascript"
+formatter = { command = "standard", args = ["--fix", "--stdin"] }
+auto-format = true
+
+[[language]]
+name = "c"
+language-server = { command = "/opt/homebrew/opt/llvm/bin/clangd" }
+auto-format = true
+
+[[language]]
+name = "cpp"
+language-server = { command = "/opt/homebrew/opt/llvm/bin/clangd" }
+auto-format = true
