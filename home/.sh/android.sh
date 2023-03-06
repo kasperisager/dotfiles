@@ -1,5 +1,7 @@
-export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+# https://developer.android.com/studio/command-line/variables
 
-export ANDROID_NDK_VERSION=24.0.8215888
+export ANDROID_USER_HOME=$HOME/.android
 
-export ANDROID_NDK_ROOT=$ANDROID_SDK_ROOT/ndk/$ANDROID_NDK_VERSION
+export ANDROID_HOME=$ANDROID_USER_HOME/sdk
+
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools
