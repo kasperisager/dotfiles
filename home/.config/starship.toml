@@ -1,10 +1,10 @@
-[c]
+[hostname]
 disabled = true
 
 [character]
 success_symbol = "[\\$](green)"
 error_symbol = "[\\$](red)"
-vicmd_symbol = "[\\$](green)"
+vimcmd_symbol = "[>](green)"
 
 [git_commit]
 tag_symbol = " tag "
@@ -19,6 +19,15 @@ deleted = "x"
 [aws]
 symbol = "aws "
 
+[azure]
+symbol = "az "
+
+[bun]
+symbol = "bun "
+
+[c]
+symbol = "C "
+
 [cobol]
 symbol = "cobol "
 
@@ -29,8 +38,10 @@ symbol = "conda "
 symbol = "cr "
 
 [cmake]
-disabled = true
 symbol = "cmake "
+
+[daml]
+symbol = "daml "
 
 [dart]
 symbol = "dart "
@@ -53,11 +64,26 @@ symbol = "exs "
 [elm]
 symbol = "elm "
 
+[fennel]
+symbol = "fnl "
+
+[fossil_branch]
+symbol = "fossil "
+
+[gcloud]
+symbol = "gcp "
+
 [git_branch]
 symbol = "git "
 
 [golang]
 symbol = "go "
+
+[gradle]
+symbol = "gradle "
+
+[guix_shell]
+symbol = "guix "
 
 [hg_branch]
 symbol = "hg "
@@ -71,11 +97,17 @@ symbol = "jl "
 [kotlin]
 symbol = "kt "
 
+[lua]
+symbol = "lua "
+
 [nodejs]
 symbol = "nodejs "
 
 [memory_usage]
 symbol = "memory "
+
+[meson]
+symbol = "meson "
 
 [nim]
 symbol = "nim "
@@ -86,6 +118,52 @@ symbol = "nix "
 [ocaml]
 symbol = "ml "
 
+[opa]
+symbol = "opa "
+
+[os.symbols]
+Alpaquita = "alq "
+Alpine = "alp "
+Amazon = "amz "
+Android = "andr "
+Arch = "rch "
+Artix = "atx "
+CentOS = "cent "
+Debian = "deb "
+DragonFly = "dfbsd "
+Emscripten = "emsc "
+EndeavourOS = "ndev "
+Fedora = "fed "
+FreeBSD = "fbsd "
+Garuda = "garu "
+Gentoo = "gent "
+HardenedBSD = "hbsd "
+Illumos = "lum "
+Linux = "lnx "
+Mabox = "mbox "
+Macos = "mac "
+Manjaro = "mjo "
+Mariner = "mrn "
+MidnightBSD = "mid "
+Mint = "mint "
+NetBSD = "nbsd "
+NixOS = "nix "
+OpenBSD = "obsd "
+OpenCloudOS = "ocos "
+openEuler = "oeul "
+openSUSE = "osuse "
+OracleLinux = "orac "
+Pop = "pop "
+Raspbian = "rasp "
+Redhat = "rhl "
+RedHatEnterprise = "rhel "
+Redox = "redox "
+Solus = "sol "
+SUSE = "suse "
+Ubuntu = "ubnt "
+Unknown = "unk "
+Windows = "win "
+
 [package]
 symbol = "pkg "
 
@@ -95,11 +173,20 @@ symbol = "pl "
 [php]
 symbol = "php "
 
+[pijul_channel]
+symbol = "pijul "
+
+[pulumi]
+symbol = "pulumi "
+
 [purescript]
 symbol = "purs "
 
 [python]
 symbol = "py "
+
+[raku]
+symbol = "raku "
 
 [ruby]
 symbol = "rb "
@@ -110,5 +197,20 @@ symbol = "rs "
 [scala]
 symbol = "scala "
 
+[spack]
+symbol = "spack "
+
+[status]
+symbol = "[x](bold red) "
+
+[sudo]
+symbol = "sudo "
+
 [swift]
 symbol = "swift "
+
+[terraform]
+symbol = "terraform "
+
+[zig]
+symbol = "zig "
