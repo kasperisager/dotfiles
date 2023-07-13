@@ -12,3 +12,19 @@ auto-format = true
 name = "cpp"
 language-server = { command = "/opt/homebrew/opt/llvm/bin/clangd" }
 auto-format = true
+
+[[language]]
+name = "objc"
+scope = "source.objc"
+roots = []
+file-types = ["m"]
+language-server = { command = "/opt/homebrew/opt/llvm/bin/clangd" }
+auto-format = true
+
+[[language]]
+name = "objcpp"
+scope = "source.objcpp"
+roots = []
+file-types = ["mm"]
+language-server = { command = "/opt/homebrew/opt/llvm/bin/clangd" }
+auto-format = true

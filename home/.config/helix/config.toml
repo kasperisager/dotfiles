@@ -2,7 +2,6 @@ theme = "solarized_dark"
 
 [editor]
 line-number = "relative"
-true-color = true
 color-modes = true
 cursorline = true
 idle-timeout = 75
@@ -22,6 +21,9 @@ render = true
 character = "┊"
 skip-levels = 1
 
+[editor.soft-wrap]
+enable = true
+
 [editor.whitespace.render]
 space = "all"
 tab = "all"
@@ -31,3 +33,6 @@ space = "·"
 nbsp = "⍽"
 tab = "→"
 tabpad = "·"
+
+[keys.normal.space]
+i = ":toggle lsp.display-inlay-hints"

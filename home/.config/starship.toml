@@ -26,6 +26,7 @@ symbol = "az "
 symbol = "bun "
 
 [c]
+disabled = true
 symbol = "C "
 
 [cobol]
