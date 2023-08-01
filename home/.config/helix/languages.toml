@@ -21,6 +21,10 @@ file-types = ["m"]
 language-server = { command = "/opt/homebrew/opt/llvm/bin/clangd" }
 auto-format = true
 
+[[grammar]]
+name = "objc"
+source = { git = "https://github.com/jiyee/tree-sitter-objc", rev = "afec0de5a32d5894070b67932d6ff09e4f7c5879" }
+
 [[language]]
 name = "objcpp"
 scope = "source.objcpp"
@@ -28,3 +32,7 @@ roots = []
 file-types = ["mm"]
 language-server = { command = "/opt/homebrew/opt/llvm/bin/clangd" }
 auto-format = true
+
+[[grammar]]
+name = "objcpp"
+source = { git = "https://github.com/panicinc/tree-sitter-objcpp", rev = "af4901aa56d459b33487c307f4951068a2365b1e" }
