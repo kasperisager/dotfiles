@@ -8,8 +8,5 @@
 	name = Kasper Isager Dalsgarð
 	email = kasperisager@hey.com
 
-[push]
-	followTags = true
-
 [pull]
 	rebase = true
