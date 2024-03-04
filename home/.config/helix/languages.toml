@@ -1,3 +1,6 @@
+[language-server.clangd]
+command = "/opt/homebrew/opt/llvm/bin/clangd"
+
 [[language]]
 name = "javascript"
 formatter = { command = "standard", args = ["--fix", "--stdin"] }
@@ -5,12 +8,12 @@ auto-format = true
 
 [[language]]
 name = "c"
-language-server = { command = "/opt/homebrew/opt/llvm/bin/clangd" }
+language-servers = ["clangd"]
 auto-format = true
 
 [[language]]
 name = "cpp"
-language-server = { command = "/opt/homebrew/opt/llvm/bin/clangd" }
+language-servers = ["clangd"]
 auto-format = true
 
 [[language]]
@@ -18,7 +21,7 @@ name = "objc"
 scope = "source.objc"
 roots = []
 file-types = ["m"]
-language-server = { command = "/opt/homebrew/opt/llvm/bin/clangd" }
+language-servers = ["clangd"]
 auto-format = true
 
 [[grammar]]
@@ -30,7 +33,7 @@ name = "objcpp"
 scope = "source.objcpp"
 roots = []
 file-types = ["mm"]
-language-server = { command = "/opt/homebrew/opt/llvm/bin/clangd" }
+language-servers = ["clangd"]
 auto-format = true
 
 [[grammar]]
