@@ -7,6 +7,11 @@ formatter = { command = "standard", args = ["--fix", "--stdin"] }
 auto-format = true
 
 [[language]]
+name = "java"
+formatter = { command = "clang-format", args = ["--assume-filename=source.java"] }
+auto-format = true
+
+[[language]]
 name = "c"
 language-servers = ["clangd"]
 auto-format = true
