@@ -7,10 +7,10 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-# Exa aliases
-alias l="exa --long"
-alias ls="exa"
-alias la="exa --long --all"
+# Eza aliases
+alias l="eza --long"
+alias ls="eza"
+alias la="eza --long --all"
 
 # Vim aliases
 alias v="vim"
@@ -20,21 +20,24 @@ alias h="hx"
 
 # Git aliases
 alias g="git"
-alias gl="git pull --prune"
-alias gp="git push"
-alias gd="git diff"
-alias gdc="git diff --cached"
-alias gc="git commit"
 alias ga="git add"
+alias gb="git branch"
+alias gc="git commit"
 alias gca="git commit -a"
 alias gco="git checkout"
-alias gb="git branch"
-alias gs="git status -sb"
-alias gsw="git switch"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias gl="git pull --prune"
 alias gm="git merge"
+alias gp="git push"
 alias gr="git rebase"
 alias gri="git rebase -i"
+alias gs="git status -sb"
 alias gst="git stash"
+alias gsu="git submodule"
+alias gsw="git switch"
+alias gt="git tag"
+alias gtl="git tag -l"
 
 # Docker aliases
 alias d="docker"
@@ -53,7 +56,8 @@ alias kd="kubectl describe"
 alias yo="yonkers"
 
 # Bare aliases
-alias bd="bare-dev"
+alias bm="bare-make"
+alias bp="bare-pack"
 
 # Reload the shell
 alias reload="exec ${SHELL} -l"
