@@ -1,5 +1,5 @@
 brew "deno"
-brew "exa"
+brew "eza"
 brew "fd"
 brew "fzf"
 brew "gh"
