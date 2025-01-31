@@ -1,0 +1,21 @@
+theme = iTerm2 Solarized Dark
+
+font-family = "CommitMono"
+font-size = 12
+font-thicken = true
+font-thicken-strength = 24
+
+cursor-style = block
+mouse-hide-while-typing = true
+
+unfocused-split-fill = 2b4b54
+unfocused-split-opacity = 0.75
+split-divider-color = 2b4b54
+
+window-padding-x = 5
+window-padding-y = 5
+
+macos-titlebar-style = tabs
+macos-option-as-alt = true
+macos-auto-secure-input = true
+macos-secure-input-indication = true

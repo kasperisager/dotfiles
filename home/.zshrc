@@ -15,6 +15,7 @@ source "$HOME/.sh/bare.sh"
 source "$HOME/.sh/pear.sh"
 source "$HOME/.sh/chromium.sh"
 source "$HOME/.sh/nvm.sh"
+source "$HOME/.sh/vcpkg.sh"
 
 source "$HOME/.zsh/history.zsh"
 source "$HOME/.zsh/prompt.zsh"
