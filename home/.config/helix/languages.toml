@@ -61,6 +61,8 @@ name = "objc"
 scope = "source.objc"
 roots = []
 file-types = ["m"]
+comment-token = "//"
+block-comment-tokens = { start = "/*", end = "*/" }
 language-servers = ["clangd"]
 auto-format = true
 
@@ -73,6 +75,8 @@ name = "objcpp"
 scope = "source.objcpp"
 roots = []
 file-types = ["mm"]
+comment-token = "//"
+block-comment-tokens = { start = "/*", end = "*/" }
 language-servers = ["clangd"]
 auto-format = true
 
