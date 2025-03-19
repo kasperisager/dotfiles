@@ -47,6 +47,11 @@ formatter = { command = "clang-format", args = ["--assume-filename=source.java"]
 auto-format = true
 
 [[language]]
+name = "swift"
+formatter = { command = "swift", args = ["format"] }
+auto-format = true
+
+[[language]]
 name = "c"
 language-servers = ["clangd"]
 auto-format = true
@@ -60,7 +65,7 @@ auto-format = true
 name = "objc"
 scope = "source.objc"
 roots = []
-file-types = ["m"]
+file-types = ["m", "mm"]
 comment-token = "//"
 block-comment-tokens = { start = "/*", end = "*/" }
 language-servers = ["clangd"]
@@ -69,17 +74,3 @@ auto-format = true
 [[grammar]]
 name = "objc"
 source = { git = "https://github.com/jiyee/tree-sitter-objc", rev = "afec0de5a32d5894070b67932d6ff09e4f7c5879" }
-
-[[language]]
-name = "objcpp"
-scope = "source.objcpp"
-roots = []
-file-types = ["mm"]
-comment-token = "//"
-block-comment-tokens = { start = "/*", end = "*/" }
-language-servers = ["clangd"]
-auto-format = true
-
-[[grammar]]
-name = "objcpp"
-source = { git = "https://github.com/panicinc/tree-sitter-objcpp", rev = "af4901aa56d459b33487c307f4951068a2365b1e" }

@@ -1,1 +1,0 @@
-; inherits: objc,cpp
