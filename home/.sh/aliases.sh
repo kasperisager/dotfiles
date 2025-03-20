@@ -59,5 +59,8 @@ alias yo="yonkers"
 alias bm="bare-make"
 alias bp="bare-pack"
 
+# Parallels aliases
+alias pl="prlctl"
+
 # Reload the shell
 alias reload="exec ${SHELL} -l"
