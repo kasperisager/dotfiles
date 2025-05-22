@@ -52,9 +52,6 @@ alias k="kubectl"
 alias kc="kubectl config"
 alias kd="kubectl describe"
 
-# Yonkers aliases
-alias yo="yonkers"
-
 # Bare aliases
 alias bm="bare-make"
 alias bp="bare-pack"
