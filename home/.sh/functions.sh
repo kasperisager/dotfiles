@@ -5,9 +5,3 @@ function o() {
     open "$@";
   fi;
 }
-
-function t() {
-  if [ $# -ne 0 ]; then
-    fd --unrestricted --prune $@ --exec-batch trash -v
-  fi;
-}

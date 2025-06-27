@@ -55,6 +55,7 @@ alias kd="kubectl describe"
 # Bare aliases
 alias bm="bare-make"
 alias bp="bare-pack"
+alias bl="bare-link"
 
 # Parallels aliases
 alias pl="prlctl"
