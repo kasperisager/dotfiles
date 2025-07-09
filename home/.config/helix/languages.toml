@@ -52,6 +52,11 @@ formatter = { command = "swift", args = ["format"] }
 auto-format = true
 
 [[language]]
+name = "rust"
+formatter = { command = "rustfmt"  }
+auto-format = true
+
+[[language]]
 name = "c"
 language-servers = ["clangd"]
 auto-format = true

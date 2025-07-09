@@ -17,6 +17,7 @@ source "$HOME/.sh/chromium.sh"
 source "$HOME/.sh/npm.sh"
 source "$HOME/.sh/nvm.sh"
 source "$HOME/.sh/vcpkg.sh"
+source "$HOME/.sh/cargo.sh"
 
 source "$HOME/.bash/prompt.sh"
 source "$HOME/.bash/fzf.sh"
